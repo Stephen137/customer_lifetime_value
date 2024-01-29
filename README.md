@@ -1,6 +1,7 @@
 # Google Merchandise Store - customer analytics dashboard
 
-![images/dashboard.JPG](attachment:3af24474-2c55-4d06-878b-aa992ff42335.JPG)
+![dashboard](https://github.com/Stephen137/google_merchandise_store/assets/97410145/99e27f12-eae8-453d-8c2a-fae0421c269b)
+
 
 ## 1. Project Overview
 
@@ -59,7 +60,7 @@ Companies use this metric to gauge profitability and to identify which customers
 
 ### 2.1 `Economic / cashflow approach`  
 
-![images/cashflow.JPG](attachment:466d8ad5-7614-4ceb-bc45-bf3fa75522f3.JPG)
+![cashflow](https://github.com/Stephen137/google_merchandise_store/assets/97410145/f6fff81d-0b8f-4776-8745-c444bab3b510)
 
 Challenges with this approach:
 
@@ -119,8 +120,7 @@ Google cloud have [learning resources](https://cloud.google.com/bigquery/docs/ar
 OK, now that I've gotten to know the dataset a bit better it's time to dive into some exploratory analysis.
 
 ### 3.2 A Kind of Magic
-
-![images/magic.jpg](attachment:2ad74c62-2ef5-4685-9e9c-c83057e8e9ac.jpg)
+![magic](https://github.com/Stephen137/google_merchandise_store/assets/97410145/dbfd28e9-d166-4fb1-a318-ae71cadf5acc)
 
 Jupyter notebooks (which i am using for this project) provide a convenient interactive computing environment for various programming languages, including Python.  You might be aware of so called `magic` commands, denoted by a % or %% symbol. These are special commands that enhance the functionality and provide additional features within Jupyter notebooks. Here's a brief summary of some commonly used magic commands:
 
