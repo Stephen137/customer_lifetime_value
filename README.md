@@ -1,6 +1,6 @@
 # Google Merchandise Store - customer analytics dashboard
 
-![dashboard.JPG](attachment:3af24474-2c55-4d06-878b-aa992ff42335.JPG)
+![images/dashboard.JPG](attachment:3af24474-2c55-4d06-878b-aa992ff42335.JPG)
 
 ## 1. Project Overview
 
@@ -59,7 +59,7 @@ Companies use this metric to gauge profitability and to identify which customers
 
 ### 2.1 `Economic / cashflow approach`  
 
-![cashflow.JPG](attachment:466d8ad5-7614-4ceb-bc45-bf3fa75522f3.JPG)
+![images/cashflow.JPG](attachment:466d8ad5-7614-4ceb-bc45-bf3fa75522f3.JPG)
 
 Challenges with this approach:
 
@@ -114,13 +114,13 @@ We can go even deeper. To access `hits.product.productRevenue` we need to first 
     UNNEST(hits) AS h,
     UNNEST(hits.product) AS p
 
-Google cloud have [learnng resources](https://cloud.google.com/bigquery/docs/arrays) to help you.
+Google cloud have [learning resources](https://cloud.google.com/bigquery/docs/arrays) to help you.
 
 OK, now that I've gotten to know the dataset a bit better it's time to dive into some exploratory analysis.
 
 ### 3.2 A Kind of Magic
 
-![magic.jpg](attachment:2ad74c62-2ef5-4685-9e9c-c83057e8e9ac.jpg)
+![images/magic.jpg](attachment:2ad74c62-2ef5-4685-9e9c-c83057e8e9ac.jpg)
 
 Jupyter notebooks (which i am using for this project) provide a convenient interactive computing environment for various programming languages, including Python.  You might be aware of so called `magic` commands, denoted by a % or %% symbol. These are special commands that enhance the functionality and provide additional features within Jupyter notebooks. Here's a brief summary of some commonly used magic commands:
 
@@ -1387,7 +1387,7 @@ google_merch_store \
 
 
     
-![png](output_47_1.png)
+![png](images/output_47_1.png)
     
 
 
@@ -1611,7 +1611,7 @@ pn.ggplot(data=cust_id_subset_df, mapping=pn.aes('date', 'price', group='fullVis
 
 
     
-![png](output_53_1.png)
+![png](images/output_53_1.png)
     
 
 
@@ -3066,7 +3066,7 @@ pn.ggplot(data=imp_spend_amount_df) + \
 
 
     
-![png](output_117_0.png)
+![png](images/output_117_0.png)
     
 
 
@@ -3179,7 +3179,7 @@ pn.ggplot(data = imp_spend_prob_df) + \
 
 
     
-![png](output_122_0.png)
+![png](images/output_122_0.png)
     
 
 
