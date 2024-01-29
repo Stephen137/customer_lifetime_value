@@ -5,20 +5,19 @@
 
 ## 1. Project Overview
 
-My starting point for this project is to frame two common business problems faced by the [Google Merchandise Store](https://shop.googlemerchandisestore.com/) and ecommerce businesses in general.
+My starting point for this project was to frame two common business problems faced by the [Google Merchandise Store](https://shop.googlemerchandisestore.com/) and ecommerce businesses in general.
 
-### Frame the business problem
+### Frame the business problems
 
 - What will customers spend in the next 90-days? (Regression)
 - What is the probability that a customer will make a purchase in the next 90-days? (Classification)
 
 In order to provide insights to these questions, we first need to :
 
-### Translate the raw data into meaningful visualizations and insights
+### Translate the raw data into meaningful insights
 
-- explore athe dataset to extract meaningful trends, patterns and anomalies regarding customer behaviour
-- visualize using plotly and plotnine
-- create additional RMF (Recency, Monetary, Frequency) to unlock hidden insights 
+- explore the dataset to extract meaningful trends, patterns and anomalies regarding customer behaviour
+- create additional RFM (Recency, Frequency, Monetary) feautures to unlock hidden insights 
 
 ### Use the insights to make future predictions
 
