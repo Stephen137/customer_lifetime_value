@@ -7,31 +7,32 @@
 
 My starting point for this project was to frame two common business problems faced by the [Google Merchandise Store](https://shop.googlemerchandisestore.com/) and ecommerce businesses in general.
 
-### Frame the business problems
+### 1.1 Frame the business problems
 
 - What will customers spend in the next 90-days? (Regression)
 - What is the probability that a customer will make a purchase in the next 90-days? (Classification)
 
 In order to provide insights to these questions, we first need to :
 
-### Translate the raw data into meaningful insights
+### 1.2 Translate the raw data into meaningful insights
 
 - explore the dataset to extract meaningful trends, patterns and anomalies regarding customer behaviour
 - create additional RFM (Recency, Frequency, Monetary) feautures to unlock hidden insights 
 
-### Use the insights to make future predictions
+### 1.3 Use the insights to make future predictions
 
-- train a machine learnign regression mode to predict the `$` customer spend in the next-90 days
-- train a machine learning classification model to predict the `likelihood` of customer spend in the next-90 days
+- train a machine learning regression model to obtain a BASELINE prediction of the `$` customer spend in the next-90 days
+- train a machine learning classification model to obtain a BASELINE prediction of the `likelihood` of customer spend in the next-90 days
 
+In practice we would adopt an iterative process, by trying a range of different models and choosing the one that presents the best compromise between training speed (cost), accuracy and explainability. The more complex the model the more accurate the results generally, but with a trade off in interpretability.
 
-### Communicate using an interactive dashboard
+### 1.4 Communicate using an interactive dashboard
 
 - present the findings of my analysis through an interactive dashboard
 - share my findings through deployment of a Dash [ecommerce customer analytics app](http://stephen137.pythonanywhere.com/)
 
 
-### Move from insights to actionable outcomes
+### 1.5 Move from insights to actionable outcomes
 
 We can use these predictions to identify :
 
@@ -71,7 +72,7 @@ Challenges with this approach:
 - Step 2: Temoral splitting - use future information to develop targets
 - Step 3: Create RFM features (Recency, Frequency, Monetary)
 
-### 3. Dataset, schema, packages
+## 3. Dataset, schema, packages
 
 The dataset I will be analysing is the [Google Analytics sample dataset for BigQuery](https://support.google.com/analytics/answer/7586738?hl=en&ref_topic=3416089&sjid=15552203920864108300-EU#zippy=%2Cin-this-article). 
 
@@ -83,7 +84,7 @@ The sample dataset contains obfuscated Google Analytics 360 data from the [Googl
 
 The dataset covers the 366 day period 1 August 2016 to 1 August 2017. 
 
-#### 3.1 Schema
+### 3.1 Schema
 
 Before diving into our analysis, it is good practice to explore the dataset schema. 
 
@@ -3438,7 +3439,7 @@ model.predict(X)
 
 ## 8. Actionable outcomes
 
-### Q1. Which customers have the highest spend `probability` in next 90-days? 
+### 8.1. Which customers have the highest spend `probability` in next 90-days? 
 
 - Target for new products similar to what they have purchased in the past.
 
@@ -3622,7 +3623,7 @@ predictions_df \
 
 We can see that the model seems to be working well in terms of identifying those customers that are likely to spend in the next-90 days. The top 5 customers above ranked by probability of spend all actually spent. Conversely, the bottom 5 customers didn't spend.
 
-### Q2. Which customers have recently purchased (within 90 days) but are unlikely to buy (probability less than 30%)? 
+### 8.2. Which customers have recently purchased (within 90 days) but are unlikely to buy (probability less than 30%)? 
 
 - Incentivize actions to increase probability.
 - Provide discounts, encourage referring a friend, nurture by letting them know what's coming.
@@ -3811,7 +3812,7 @@ predictions_df \
 
 
 
-### Q3. Missed opportunities: Big spenders that could be unlocked 
+### 8.3. Missed opportunities: Big spenders that could be unlocked 
 
 - Send bundle offers encouraging volume purchases
 - Focus on missed opportunities
@@ -3998,7 +3999,7 @@ predictions_df \
 
 
 
-## Communication of findings
+## 9. Communication of findings
 
 ### 9.1 e-commerce analytics dashboard using Dash for viewing locally
 
