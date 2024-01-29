@@ -1,4 +1,4 @@
-# Google Merchandise Store - customer analytics dashboard
+# Customer Lifetime Value (CLV)
 
 ![dashboard](https://github.com/Stephen137/google_merchandise_store/assets/97410145/99e27f12-eae8-453d-8c2a-fae0421c269b)
 
