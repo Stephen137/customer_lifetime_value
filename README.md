@@ -17,7 +17,9 @@ In order to provide insights to these questions, we first need to :
 ### 1.2 Translate the raw data into meaningful insights
 
 - explore the dataset to extract meaningful trends, patterns and anomalies regarding customer behaviour
-- create additional RFM (Recency, Frequency, Monetary) feautures to unlock hidden insights 
+- create additional RFM (Recency, Frequency, Monetary) feautures to unlock hidden insights
+
+This project focuses on these key customer lifetime value features, however in practice additional features can be added to help to improve the baseline model.
 
 ### 1.3 Use the insights to make future predictions
 
